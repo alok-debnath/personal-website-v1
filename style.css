@@ -26,7 +26,10 @@ body {
 	font-family: var(--font-sans);
 }
 
-.highlight {
+.highlight{
+	color: var(--pallet-highlight);
+}
+.highlight-mono {
 	color: var(--pallet-highlight);
 	font-family: var(--font-mono);
 }
@@ -94,6 +97,7 @@ h3 {
 a {
 	text-decoration: none;
 	position: relative;
+	color: var(--pallet-highlight);
 }
 a:after {
 	content: "";
@@ -117,6 +121,8 @@ a:hover:after {
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+
+/* section 01 */ /* About me */
 
 .self-img {
 	width: calc(25vw - 2px);
@@ -165,23 +171,82 @@ img.anti-hover {
 }
 
 ul {
-	list-style: none;
-	font-family: var(--font-mono);
-	font-size: 0.8rem;
+	list-style:none;
 	padding-left: 0;
-
+	margin-left: 15px;
+	font-size: 15px;
+}
+ul.list-expertise{
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
 	margin-right: 30%;
+	font-size: 0.8rem;
+	font-family: var(--font-mono);
 }
 li::before {
 	content: "";
 	display: inline-block;
 	width: 5px;
 	height: 5px;
+	margin-right: 10px;
+	/* this will align the text on left to look like a list */
+	/* added width 5px + margin-right 10px = -15 */
+	margin-left: -15px;
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background-color: var(--pallet-highlight);
-	margin-right: 10px;
 	transform: rotate(90deg);
+}
+
+/* section 02 */ /* experience */
+
+.vertical-tabs {
+	min-height: 340px;
+}
+
+.nav-pills button {
+	margin-top: 0;
+}
+.nav-pills .nav-link:not(.active) {
+	font-weight: 300;
+	border-left: 2px solid rgb(35, 53, 84);
+	font-size: 14px;
+
+	padding: 8px 8px;
+	color: var(--pallet-text);
+	font-family: var(--font-mono);
+	border-radius: 0px;
+}
+.nav-pills .nav-link:not(.active):hover {
+	background-color: rgba(35, 89, 169, 0.114);
+	color: var(--pallet-highlight);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	font-family: var(--font-mono);
+	font-weight: 300;
+	font-size: 14px;
+
+	background-color: rgba(35, 89, 169, 0.114);
+	color: var(--pallet-highlight);
+	border-left: 2px solid var(--pallet-highlight);
+	border-radius: 0px;
+}
+
+.vertical-tabs-contents{
+	padding-top: 5px;
+}
+
+/* section 02 */ /* Content section */
+.tab-content h3{
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--pallet-whitelight);
+}
+
+.tab-content .date{
+	font-family: var(--font-mono);
+	font-size: 15px;
+	font-weight: 500;
 }
