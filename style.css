@@ -245,6 +245,11 @@ li::before {
 	color: var(--pallet-whitelight);
 }
 
+.job-cat{
+	font-family: var(--font-mono);
+	font-size: 12px;
+}
+
 .tab-content .date{
 	font-family: var(--font-mono);
 	font-size: 15px;
