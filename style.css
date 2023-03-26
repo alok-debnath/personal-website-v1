@@ -26,7 +26,7 @@ body {
 	font-family: var(--font-sans);
 }
 
-.highlight{
+.highlight {
 	color: var(--pallet-highlight);
 }
 .highlight-mono {
@@ -99,7 +99,7 @@ a {
 	position: relative;
 	color: var(--pallet-highlight);
 }
-a:after {
+.link-hover:after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -108,7 +108,7 @@ a:after {
 	border-bottom: 1px solid;
 	transition: 0.3s;
 }
-a:hover:after {
+.link-hover:hover:after {
 	width: 100%;
 }
 
@@ -171,12 +171,12 @@ img.anti-hover {
 }
 
 ul {
-	list-style:none;
+	list-style: none;
 	padding-left: 0;
 	margin-left: 15px;
 	font-size: 15px;
 }
-ul.list-expertise{
+ul.list-expertise {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
@@ -234,24 +234,36 @@ li::before {
 	border-radius: 0px;
 }
 
-.vertical-tabs-contents{
+.vertical-tabs-contents {
 	padding-top: 5px;
 }
 
 /* section 02 */ /* Content section */
-.tab-content h3{
+.tab-content h3 {
 	font-size: 20px;
 	font-weight: 500;
 	color: var(--pallet-whitelight);
 }
 
-.job-cat{
+.job-cat {
 	font-family: var(--font-mono);
 	font-size: 12px;
 }
 
-.tab-content .date{
+.tab-content .date {
 	font-family: var(--font-mono);
 	font-size: 15px;
 	font-weight: 500;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(136, 146, 176,0.5);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--pallet-text);
 }
