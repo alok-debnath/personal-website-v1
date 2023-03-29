@@ -1,4 +1,4 @@
-var overlay = document.querySelector("#hover-overlay");
+var overlay = document.querySelector("#img");
 var img = document.querySelector("#img");
 var img_container = document.querySelector("#img-container");
 
