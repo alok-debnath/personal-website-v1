@@ -209,7 +209,7 @@ li::before {
 	margin-right: 10px;
 	/* this will align the text on left to look like a list */
 	/* added width 5px + margin-right 10px = -15 */
-	margin-left: -15px;
+	margin-left: -20px;
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background-color: var(--pallet-highlight);
 	transform: rotate(90deg);
@@ -272,4 +272,18 @@ li::before {
 	font-family: var(--font-mono);
 	font-size: 15px;
 	font-weight: 500;
+}
+
+.footer{
+	padding-bottom: 20px;
+}
+.footer-text{
+	font-family: var(--font-mono);
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--pallet-text);
+	transition: 0.3s ease-in-out;
+}
+.footer-text:hover{
+	color: var(--pallet-highlight);
 }
