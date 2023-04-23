@@ -12,11 +12,48 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="header text-center">
-            <h1 class="">Site Under active construction</h1>
-            <p>last updated on 08-04-2023</p>
-        </div>
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jobs">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-auto">
+                    <a href="" target="_blank"><button class="button-styled-small">Resume</button></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        
         <div class="container main">
+            <div class="header text-center">
+                <h1 class="">Site Under active construction</h1>
+                <p>last updated on 24-04-2023</p>
+            </div>
             <div class="row">
                 <div class="col-9">
                     <p class="highlight-mono">Hi, my name is</p>
@@ -34,11 +71,11 @@
                         </div>
                     </div>
                     <a target="_blank" href="https://github.com/alok-debnath">
-                        <button class="highlight-mono">Check out my GitHub!</button>
+                        <button class="highlight-mono button-styled">Check out my GitHub!</button>
                     </a>
                 </div>
             </div>
-            <div class="row section">
+            <div class="row section" id="about">
                 <div class="col">
                     <div class="row">
                         <div class="col-lg-7">
@@ -65,7 +102,7 @@
                                 various fields to build better solutions.
                             </p>
                             <p>I have expertise in several areas of web development, including:</p>
-                            <ul class="list-expertise">
+                            <ul class="list-expertise styled-list">
                                 <li>Python</li>
                                 <li>Django</li>
                                 <li>JavaScript</li>
@@ -147,7 +184,7 @@
                                     </h3>
                                     <p class="job-cat">--Intern</p>
                                     <p class="date">December 2022 - March 2023</p>
-                                    <ul>
+                                    <ul class="styled-list">
                                         <li
                                             >Learned multiple programming languages used in web
                                             development, including HTML, CSS, JavaScript, Python,
@@ -211,7 +248,7 @@
                         I’ll try my best to get back to you!
                     </p>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                        <button class="highlight-mono">Say Hello</button>
+                        <button class="highlight-mono button-styled">Say Hello</button>
                     </a>
                 </div>
             </div>

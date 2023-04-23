@@ -28,13 +28,17 @@
 
 .header {
     color: rgb(185, 118, 118);
+    padding-bottom: 20px;
 }
 .header p {
     color: rgb(118, 170, 185);
 }
+.header h1{
+    font-size: 2rem;
+}
 
 .main {
-    margin-top: 150px;
+    padding-top: 40px;
 }
 
 body {
@@ -69,7 +73,7 @@ h1 {
     color: var(--pallet-whitelight);
 }
 
-button {
+.button-styled {
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
@@ -77,12 +81,13 @@ button {
     background-color: rgba(0, 0, 0, 0);
     color: var(--pallet-highlight);
     padding: 15px 30px 15px 30px;
-    transition: background-color 0.2s ease-in-out;
     margin-top: 40px;
     font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
 }
-button:hover {
-    background-color: rgb(100, 255, 218, 0.1);
+.button-styled:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0px var(--pallet-highlight);
 }
 
 h3 {
@@ -139,6 +144,44 @@ a {
     margin-bottom: 20px;
 }
 
+/* navbar */
+.navbar{
+    background-color: var(--pallet-bg);
+
+}
+.navbar li{
+    padding-right: 20px;
+}
+.navbar a{
+    transition: all 0.2s ease-in-out;
+}
+.navbar a:hover{
+    color: var(--pallet-highlight);
+}
+
+.nav-link{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--pallet-whitelight);
+}
+
+.button-styled-small{
+    position: relative;
+    font-size: 0.8rem;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--pallet-highlight);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--pallet-highlight);
+    padding: 9px 15px 9px 15px;
+    transition: all 0.2s ease-in-out;
+}
+.button-styled-small:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0px var(--pallet-highlight);
+}
+
 /* section 01 */ /* About me */
 
 .self-img {
@@ -151,12 +194,6 @@ a {
     left: 17px;
     transition: all 0.17s linear;
 }
-/* .overlay {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(100, 255, 218, 0.3);
-} */
-/* .overlay, */
 .self-img img {
     top: -17px;
     left: -17px;
@@ -187,7 +224,7 @@ img.anti-hover {
 	background-color: rgba(0, 0, 0, 0);
 } */
 
-ul {
+ul.styled-list{
     list-style: none;
     padding-left: 0;
     margin-left: 15px;
@@ -201,7 +238,7 @@ ul.list-expertise {
     font-size: 0.8rem;
     font-family: var(--font-mono);
 }
-li::before {
+.styled-list li::before {
     content: "";
     display: inline-block;
     width: 5px;
