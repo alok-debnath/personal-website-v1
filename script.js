@@ -13,3 +13,17 @@ overlay.addEventListener("mouseout", function () {
     overlay.classList.remove("anti-hover");
     img.classList.remove("anti-hover");
 });
+
+// navbar hide behaviour
+let prevScrollpos = window.pageYOffset;
+let navbar = document.querySelector("nav");
+navbar.style.transform = "translateY(0)";
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        navbar.style.transform = "translateY(0)";
+    } else {
+        navbar.style.transform = "translateY(-100%)";
+    }
+    prevScrollpos = currentScrollPos;
+};

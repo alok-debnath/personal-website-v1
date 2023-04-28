@@ -2,6 +2,7 @@
 
 :root {
     --pallet-bg: rgb(10, 25, 47);
+    --pallet-bg-nav: rgb(10, 25, 47, 0.7);
     --pallet-text: rgb(136, 146, 176);
     --pallet-highlight: rgb(100, 255, 218);
     --pallet-whitelight: rgb(204, 214, 246);
@@ -33,7 +34,7 @@
 .header p {
     color: rgb(118, 170, 185);
 }
-.header h1{
+.header h1 {
     font-size: 2rem;
 }
 
@@ -145,27 +146,32 @@ a {
 }
 
 /* navbar */
-.navbar{
-    background-color: var(--pallet-bg);
-
+.navbar-hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
 }
-.navbar li{
+
+.navbar {
+    background-color: var(--pallet-bg-nav);
+    backdrop-filter: blur(10px);
+}
+.navbar li {
     padding-right: 20px;
 }
-.navbar a{
+.navbar a {
     transition: all 0.2s ease-in-out;
 }
-.navbar a:hover{
+.navbar a:hover {
     color: var(--pallet-highlight);
 }
 
-.nav-link{
+.nav-link {
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--pallet-whitelight);
 }
 
-.button-styled-small{
+.button-styled-small {
     position: relative;
     font-size: 0.8rem;
     border-width: 1px;
@@ -177,7 +183,7 @@ a {
     padding: 9px 15px 9px 15px;
     transition: all 0.2s ease-in-out;
 }
-.button-styled-small:hover{
+.button-styled-small:hover {
     transform: translate(-3px, -3px);
     box-shadow: 3px 3px 0px var(--pallet-highlight);
 }
@@ -224,7 +230,7 @@ img.anti-hover {
 	background-color: rgba(0, 0, 0, 0);
 } */
 
-ul.styled-list{
+ul.styled-list {
     list-style: none;
     padding-left: 0;
     margin-left: 15px;
