@@ -29,6 +29,7 @@
 
 .header {
     color: rgb(185, 118, 118);
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 .header p {
@@ -88,7 +89,7 @@ h1 {
 }
 .button-styled:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 3px 3px 0px var(--pallet-highlight);
+    box-shadow: 4px 4px 0px var(--pallet-highlight);
 }
 
 h3 {
@@ -148,7 +149,7 @@ a {
 /* navbar */
 .navbar-hide {
     transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .navbar {
