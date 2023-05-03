@@ -147,6 +147,10 @@ a {
 }
 
 /* navbar */
+.navbar-brand{
+    max-width: 20px;
+}
+
 .navbar-hide {
     transform: translateY(-100%);
     transition: transform 0.2s ease-in-out;
